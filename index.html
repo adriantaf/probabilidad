@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Proyecto probabilidad</title>
+	<link rel="stylesheet" href="./index.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+	<!-- 6bvp -->
+</head>
+<body>
+	<template id="plantilla">
+		<section id="seccion" class="seccion">
+			<article class="apartado-informativo">
+				<h2 class="titulo" id="titulo"></h2>
+				<div class="calculos">
+					<div class="bloque-1">
+						<p>
+							<b>Rango =</b> <span id="rango"></span>
+							<br>
+							<b>Clases =</b> <span id="clases"></span>
+							<br>
+							<b>Ancho de clase =</b> <span id="anchoClase"></span>
+						</p>
+					</div>
+					<div class="bloque-2">
+						<p>
+							<b>X̅ (media) =</b> <span id="media"></span>
+							<br>
+							<b>S (desviacion estandar) =</b> <span id="desviacionEstandar"></span>
+						</p>
+					</div>
+				</div>
+				<table>
+					<thead>
+						<tr>
+							<th>Clases</th>
+							<th>Xi</th>
+							<th>Fi</th>
+							<th>FiXi</th>
+							<th>(Xi - X̅)<sup>2</sup></th>
+							<th>Fi(Xi - X̅)<sup>2</sup></th>
+						</tr>
+					</thead>
+					<tbody id="tbody-tabla"></tbody>
+				</table>
+			</article>
+			<article class="apartado-grafica">
+				<div class="informacion">
+					<p class="datos-grafica"><b>X̅ - S =</b> <span id="dg-media-menos-s"></span></p>
+					<p class="datos-grafica"><b>X̅ =</b> <span id="dg-media"></span></p>
+					<p class="datos-grafica"><b>X̅ + S =</b> <span id="dg-media-mas-s"></span></p>
+				</div>
+				<div class="contenedor-grafica">
+					<canvas id="grafica"></canvas>
+				</div>
+			</article>
+		</section>
+	</template>
+	<script src="./datos.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="./graficas.js"></script>
+	<script src="./index.js"></script>
+</body>
+</html>

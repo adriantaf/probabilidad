@@ -1,0 +1,70 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Nunito Sans', sans-serif;
+}
+body {
+	margin: 0;
+	font-size: 18px;
+	background-color: #f9f9fa;
+}
+
+
+.seccion {
+	min-width: 560px;
+	padding: 0 20px;
+	padding-bottom: 5em;
+}
+.seccion:last-child {
+	padding-bottom: 1em;
+}
+.apartado-informativo {
+	margin-bottom: 3em;
+}
+
+
+.apartado-informativo .titulo {
+	text-align: center;
+}
+.apartado-informativo .calculos {
+	display: flex;
+	justify-content: space-between;
+}
+.apartado-informativo table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid red;
+}
+.apartado-informativo th {
+	border: 1px solid #ccc;
+
+	padding: 5px 10px;
+	background-color: rgb(12, 150, 241);
+	color: #fff;
+}
+.apartado-informativo td {
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+	
+	font-variant-numeric: tabular-nums;
+	text-align: right;
+}
+.apartado-informativo td.clases {
+	text-align: center;
+}
+
+
+.apartado-grafica {
+	padding: 20px 0;
+}
+.apartado-grafica .informacion {
+	width: 97%;
+	margin-left: 3%;
+	margin-bottom: 1em;
+	display: flex;
+	justify-content: space-around;
+	background-color: rgb(255, 220, 192);
+}
+
+.apartado-grafica .informacion .datos-grafica {
+	font-size: 16px;
+}
